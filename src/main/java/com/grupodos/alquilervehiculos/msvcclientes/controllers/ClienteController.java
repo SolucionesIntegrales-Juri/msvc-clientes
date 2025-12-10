@@ -21,7 +21,10 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Slf4j
 @RequestMapping("/api/clientes")
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173"})
+@CrossOrigin(origins = {"http://localhost:3000",
+        "http://localhost:5173",
+        "https://soluciones-integrales-juri.vercel.app",
+        "http://138.68.2.13"})
 public class ClienteController {
 
     private final ClienteService clienteService;
